@@ -1,19 +1,14 @@
 import { NavBar } from "./NavBar";
 import { TextTitle } from "../ui/TextTitle";
-import { Button } from "../ui/button";
-import { TextContent } from "../ui/TextContent";
-
-function Header(){
+type HeaderProps = {
+    children: React.ReactNode
+}
+function Header(props:HeaderProps){
     return(
         <>
             <TextTitle TextTitle={"Hello World"} />
             <NavBar />
-            <Button>
-                <TextContent ContentText="Register"/>
-            </Button>
-            <Button>
-                <TextContent ContentText="Login"/>
-            </Button>
+            {props.children}
         </>
     );
 }
