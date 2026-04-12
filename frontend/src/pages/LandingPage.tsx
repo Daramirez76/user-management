@@ -1,27 +1,18 @@
 import { Header } from "../components/layout/Header";
-import { Button } from "../components/ui/Button";
 import { TextContent } from "../components/ui/TextContent";
 import { Card } from "../components/ui/Card";
 import { Footer } from "../components/layout/Footer";
 import { TextTitle } from "../components/ui/TextTitle";
-import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { NavBar } from "../components/layout/NavBar";
 
 function LandingPage(){
-    const navigate = useNavigate();
-
     return(
         <>
             <Header>
-                <Button
-                    onClick={() => navigate("/register")}
-                >
-                    <TextContent ContentText="Register"/>
-                </Button>
-                <Button
-                    onClick={() => navigate("/login")}
-                >
-                    <TextContent ContentText="Login"/>
-                </Button>
+                <NavBar />
+                <Link to={"/Register"}>Register</Link>
+                <Link to={"/Login"}>Login</Link>
             </Header>
             <Card>
                 <TextTitle TextTitle="User Managment"/>
