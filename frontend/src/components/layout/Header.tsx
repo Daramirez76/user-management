@@ -5,7 +5,7 @@ type HeaderProps = {
 function Header(props:HeaderProps){
     return(
         <>
-            <TextTitle TextTitle={"Hello World"} />
+            <TextTitle TextTitle={"UMP"} />
             {props.children}
         </>
     );

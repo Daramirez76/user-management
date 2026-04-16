@@ -21,7 +21,7 @@ function LandingPage(){
                 <TextContent ContentText="This website has of objective manage the users of this website"/>
             </Card>
             <Card>
-                <TextTitle TextTitle="Characteristics"/>
+                <TextTitle TextTitle="Characteristics" tag={"h2"}/>
             </Card>
             <Card>
                 <TextContent ContentText="the administrator has create users, read information of users, update information of users and delete information of users"/>

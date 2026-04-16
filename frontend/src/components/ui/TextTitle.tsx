@@ -1,4 +1,4 @@
-import { ElementType } from "react";
+import type { ElementType } from "react";
 
 type TextTitleProps = {
     TextTitle:string;
@@ -6,12 +6,13 @@ type TextTitleProps = {
 };
 
 function TextTitle(props: TextTitleProps){
-    const tag = props.as ?? "h1";
+    const Tag = props.tag ?? "h1";
+
     return(
         <>  
-            <props.tag>
+            <Tag>
                 {props.TextTitle}
-            </props.tag>
+            </Tag>
         </>
     );
 }
