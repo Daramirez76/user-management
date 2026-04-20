@@ -11,8 +11,8 @@ function LandingPage(){
         <>
             <Header>
                 <NavBar />
-                <Link to={"/Register"}>Register</Link>
-                <Link to={"/Login"}>Login</Link>
+                <Link to={"/Register"} className="text-sm">Register</Link>
+                <Link to={"/Login"} className="text-sm">Login</Link>
             </Header>
             <Card>
                 <TextTitle TextTitle="User Managment"/>

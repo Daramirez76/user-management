@@ -4,10 +4,10 @@ type HeaderProps = {
 }
 function Header(props:HeaderProps){
     return(
-        <>
+        <header className="flex justify-around text-4xl">
             <TextTitle TextTitle={"UMP"} />
             {props.children}
-        </>
+        </header>
     );
 }
 
